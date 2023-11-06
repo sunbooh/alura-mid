@@ -12,4 +12,11 @@ while (contador<listadeTeclas.lenght){
     listadeteclas[contador].onclick= tocaSom;
     contador = contador+1
 
+    tecla.onkeydown=function(evento){
+        if(evento.code=='enter')
+    tecla.classlist.add('ativa')
+}
+tecla.onkeyup=function(){
+    tecla.classlist.remove('ativa')
+}
 }
